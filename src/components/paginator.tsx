@@ -8,6 +8,7 @@ interface PaginatorProps {
 }
 
 export const Paginator = ({ count, page, onChange }: PaginatorProps) => {
+  // @ts-ignore
   const handleOnPageChange = (e: ChangeEvent<unknown>, page: number) => {
     onChange(page)
   }
