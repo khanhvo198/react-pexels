@@ -1,10 +1,9 @@
-import { useQuery, keepPreviousData } from "@tanstack/react-query";
-import { useState, useMemo } from "react";
-import { Photo } from "../data-access/pexels/pexels.model"
+import { keepPreviousData, useQuery } from "@tanstack/react-query";
+import { useMemo, useState } from "react";
 import useDebounce from "../hooks/debounce";
 import { randomPhotos, searchPhotos } from "../services/pexelsService";
 import { Paginator } from "./paginator";
-import { PhotoCard } from "./photo-card"
+import { PhotoCard } from "./photo-card";
 import { Search } from "./search";
 
 interface PhotosGridProps {
